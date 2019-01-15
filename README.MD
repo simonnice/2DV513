@@ -23,7 +23,7 @@ define('APPVERSION', '1.0.0');
 ~~~~
 
 Create these tables:
-br
+<br>
 ACTOR TABLE
 ~~~~
 actor	CREATE TABLE `actor` (
