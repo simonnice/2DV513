@@ -39,7 +39,7 @@ actor	CREATE TABLE `actor` (
 MOVIE TABLE 
 
 ~~~~
-movie	CREATE TABLE `movie` (
+CREATE TABLE `movie` (
   `mov_id` int(11) NOT NULL,
   `mov_title` varchar(50) NOT NULL,
   `mov_length` int(11) NOT NULL,
@@ -52,9 +52,30 @@ movie	CREATE TABLE `movie` (
 GENRE TABLE
 
 ~~~~
-genre	CREATE TABLE `genre` (
+CREATE TABLE `genre` (
   `gen_id` int(11) NOT NULL,
   `gen_title` varchar(50) NOT NULL,
   PRIMARY KEY (`gen_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1	
 ~~~~
+
+MOVIE_CAST TABLE
+
+~~~~
+CREATE TABLE `movie_cast` (
+  `act_id` int(11) NOT NULL,
+  `mov_id` int(11) NOT NULL,
+  `role` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1	
+AULT CHARSET=latin1	
+~~~~
+
+MOVIE_GENRES TABLE
+
+~~~~
+CREATE TABLE `movie_genres` (
+  `mov_id` int(11) NOT NULL,
+  `gen_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1	
+~~~~
+
