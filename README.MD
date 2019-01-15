@@ -22,7 +22,7 @@ define('SITENAME', 'YOUR_SITE_NAME');
 define('APPVERSION', '1.0.0');
 ~~~~
 
-Create these tables:
+Create these tables in the database:
 <br>
 ACTOR TABLE
 ~~~~
@@ -46,5 +46,15 @@ movie	CREATE TABLE `movie` (
   `mov_year` int(11) NOT NULL,
   `mov_lang` varchar(50) NOT NULL,
   PRIMARY KEY (`mov_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1	
+~~~~
+
+GENRE TABLE
+
+~~~~
+genre	CREATE TABLE `genre` (
+  `gen_id` int(11) NOT NULL,
+  `gen_title` varchar(50) NOT NULL,
+  PRIMARY KEY (`gen_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1	
 ~~~~
