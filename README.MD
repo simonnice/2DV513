@@ -35,3 +35,15 @@ actor	CREATE TABLE `actor` (
   PRIMARY KEY (`act_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1	
 ~~~~
+<br>
+MOVIE TABLE 
+~~~~
+movie	CREATE TABLE `movie` (
+  `mov_id` int(11) NOT NULL,
+  `mov_title` varchar(50) NOT NULL,
+  `mov_length` int(11) NOT NULL,
+  `mov_year` int(11) NOT NULL,
+  `mov_lang` varchar(50) NOT NULL,
+  PRIMARY KEY (`mov_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1	
+~~~~
