@@ -37,6 +37,7 @@ actor	CREATE TABLE `actor` (
 ~~~~
 <br>
 MOVIE TABLE 
+
 ~~~~
 movie	CREATE TABLE `movie` (
   `mov_id` int(11) NOT NULL,
