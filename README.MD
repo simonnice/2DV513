@@ -3,6 +3,7 @@ HOW TO CREATE THE DATABASE
 --------------------------
 
 Make a config.php file that looks like this and that matches your credentials:
+<br>
 
 ~~~~
 <?php
